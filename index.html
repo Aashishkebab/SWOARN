@@ -4,7 +4,7 @@
         
         <style>
             h1{
-                font-size: 2.9em;
+                font-size: 4vw;
                 margin: 0;
             }
             h2{
@@ -24,8 +24,8 @@
                 color: white;
                 width: 100%;
                 display: block;
-                padding-bottom: 7em;
-                padding-top: 0.1em;
+                padding-bottom: 5em;
+                padding-top: 1em;
                 padding-left: 1em;
                 padding-right: 1em;
                 box-sizing: border-box;
@@ -35,17 +35,25 @@
                 color: white;
                 width: 100%;
                 display: block;
-                padding-bottom: 7em;
-                padding-top: 0.1em;
+                padding-bottom: 5em;
+                padding-top: 1em;
                 padding-left: 1em;
                 padding-right: 1em;
                 box-sizing: border-box;
                 background-position: center;
-                background-size: cover;
+                background-size: contain;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
                 
-                box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7);
+                box-shadow: inset 0 0 0 1000px rgba(0,0,0,.666);
             }
-        
+            
+            @media screen and (min-width: 777px) {
+                .white-section{
+                    background-attachment: scroll;
+                    background-size: cover;
+                }
+            }
         </style>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +65,7 @@
             <img src="logo.png" style="width: 100%; max-width: 37vh; margin: auto; display: block;">
             <h1 style="text-align: center;">Southwestern Ohio Animal Rights Network</h1>
         </span>
-        <span class="white-section" style="background-image: url(cube.jpeg);">
+        <span class="white-section" style="background-image: url(cube.jpg);">
             <h2>Who we are</h2>
             <p>We are a network of animal rights activists in the Cincinatti/Dayton area that works with organizations like PETA, Anonymous for the Voiceless, and more to end all forms of animal exploitation and cruelty.</p>
         </span>
@@ -65,7 +73,7 @@
             <h2>What we do</h2>
             <p>We push for change in all ways that we can, from petitioning for legislative changes to screaming our hearts out in the streets.</p>
         </span>
-        <span class="white-section" style="background-image: url(horse.jpg);">
+        <span class="white-section" style="background-image: url(horse.jpeg);">
             <h2>Get involved</h2>
             <p>If you are interested in advocating for the animals in an obligation-free environment, join our Discord server.</p>
             <br/>
@@ -76,8 +84,8 @@
         <span class="black-section">
             <h2>Follow us on social media</h2>
             <p>Stay up to date with all our happenings and share with your friends.</p>
-            <a href="#" class="fab fa-facebook" style="font-size: 5em; color: dodgerblue;"></a>
-            <a href="#" class="fab fa-instagram" style="font-size: 5em; margin-left: 0.4em; color: rebeccapurple; text-decoration: none;"></a>
+            <a href="https://www.facebook.com/profile.php?id=61554326576034" target="_blank" class="fab fa-facebook" style="font-size: 5em; color: dodgerblue;"></a>
+            <a href="https://www.instagram.com/swoarn_org" target="_blank" class="fab fa-instagram" style="font-size: 5em; margin-left: 0.4em; color: rebeccapurple; text-decoration: none;"></a>
         </span>
     </body>
 </html>
