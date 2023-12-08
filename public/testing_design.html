@@ -21,9 +21,9 @@
                 font-family: sans-serif;
             }
             
-            .black-section{
+            .text-section{
                 background-color: black;
-                color: lightgray;
+                color: white;
                 width: 100%;
                 display: block;
                 padding-bottom: 5em;
@@ -32,9 +32,9 @@
                 padding-right: 1em;
                 box-sizing: border-box;
             }
-            .white-section{
-                background-color: white;
-                color: lightgray;
+            .image-section{
+                background-color: black;
+                color: white;
                 width: 100%;
                 display: block;
                 padding-bottom: 5em;
@@ -43,37 +43,23 @@
                 padding-right: 1em;
                 box-sizing: border-box;
                 background-position: center;
-                background-size: 173%;
                 background-attachment: fixed;
-                background-repeat: repeat-y;
+                background-size: cover;
                 
-                box-shadow: inset 0 0 0 1000px rgba(0,0,0,.666);
-            }
-            
-            @media screen and (min-width: 1111px) {
-                .white-section{
-                    background-size: cover;
-                }
+                box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .666);
             }
 
             @media (prefers-color-scheme: light){
-                .black-section{
+                .text-section{
                     background-color: white;
                     color: black;
-                    width: 100%;
-                    display: block;
-                    padding-bottom: 5em;
-                    padding-top: 1em;
-                    padding-left: 1em;
-                    padding-right: 1em;
-                    box-sizing: border-box;
                 }
-
-                .black-section h1{
+                .image-section{
+                    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .666);
                     color: black;
                 }
 
-                .black-section h2{
+                h1, h2{
                     color: black;
                 }
             }
@@ -84,19 +70,19 @@
     </head>
     
     <body style="width: 100%;">
-        <span class="black-section">
+        <span class="text-section">
             <img src="logo.png" style="width: 100%; max-width: 37vh; margin: auto; display: block;">
             <h1 style="text-align: center;">Southwestern Ohio Animal Rights Network</h1>
         </span>
-        <span class="white-section" style="background-image: url(cube.jpg);">
+        <span class="image-section" style="background-image: url(cube.jpg);">
             <h2>Who we are</h2>
             <p>We are a network of animal rights activists in the Cincinatti/Dayton area that works with organizations like PETA, Anonymous for the Voiceless, and more to end all forms of animal exploitation and cruelty.</p>
         </span>
-        <span class="black-section">
+        <span class="text-section">
             <h2>What we do</h2>
             <p>We push for change in all ways that we can, from petitioning for legislative changes to screaming our hearts out in the streets.</p>
         </span>
-        <span class="white-section" style="background-image: url(horse.jpeg);">
+        <span class="image-section" style="background-image: url(horse.jpeg);">
             <h2>Get involved</h2>
             <p>If you are interested in advocating for the animals in an obligation-free environment, join our Discord server.</p>
             <br/>
@@ -104,7 +90,7 @@
             <br/>
             <br/>
         </span>
-        <span class="black-section">
+        <span class="text-section">
             <h2>Follow us on social media</h2>
             <p>Stay up to date with all our happenings and share with your friends.</p>
             <a href="https://www.facebook.com/profile.php?id=61554326576034" target="_blank" class="fab fa-facebook" style="font-size: 5em; color: dodgerblue;"></a>
