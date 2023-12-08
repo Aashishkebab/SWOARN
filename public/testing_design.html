@@ -4,10 +4,12 @@
         
         <style>
             h1{
+                color: white;
                 font-size: 4vw;
                 margin: 0;
             }
             h2{
+                color: white;
                 font-size: 2em;
                 margin: 0;
             }
@@ -32,7 +34,7 @@
             }
             .white-section{
                 background-color: white;
-                color: white;
+                color: lightgray;
                 width: 100%;
                 display: block;
                 padding-bottom: 5em;
@@ -54,11 +56,27 @@
                 }
             }
 
-            @media (prefers-color-scheme: dark){
+            @media (prefers-color-scheme: light){
+                .black-section{
+                    background-color: white;
+                    color: black;
+                    width: 100%;
+                    display: block;
+                    padding-bottom: 5em;
+                    padding-top: 1em;
+                    padding-left: 1em;
+                    padding-right: 1em;
+                    box-sizing: border-box;
+                }
 
+                .black-section h1{
+                    color: black;
+                }
+
+                .black-section h2{
+                    color: black;
+                }
             }
-
-
         </style>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
