@@ -66,10 +66,3 @@ iframe{
         color: black;
     }
 }
-
-@supports not (-webkit-touch-callout: none) {
-    .image-section{
-        background-attachment: fixed;
-        background-size: cover;
-    }
-}
