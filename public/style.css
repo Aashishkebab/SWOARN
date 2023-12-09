@@ -48,9 +48,9 @@ body{
 iframe{
     display: block;
     margin: auto;
-    width: 32em;
-    height: 18em;
-    max-width: 95%;
+    width: 98%;
+    max-width: 57em;
+    aspect-ratio: 16 / 9;
 }
 
 .anchor-button{
