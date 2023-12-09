@@ -1,100 +1,33 @@
 <html>
     <head>
         <title>SWOARN test</title>
-        
-        <style>
-            html{
-                height: 100%;
-            }
-
-            h1{
-                color: white;
-                font-size: min(7vw, 3em);
-                margin: 0;
-            }
-            h2{
-                color: white;
-                font-size: 2em;
-                margin: 0;
-            }
-            
-            body{
-                margin: 0;
-                padding: 0;
-                font-size: 1.2em;
-                font-family: sans-serif;
-            }
-            
-            .text-section{
-                background-color: black;
-                color: lightgrey;
-                width: 100%;
-                display: block;
-                padding-bottom: 7em;
-                padding-top: 1em;
-                padding-left: 1em;
-                padding-right: 1em;
-                box-sizing: border-box;
-            }
-            .image-section{
-                background-color: black;
-                color: lightgray;
-                width: 100%;
-                height: 23em;
-                display: block;
-                padding-bottom: 7em;
-                padding-top: 1em;
-                padding-left: 1em;
-                padding-right: 1em;
-                box-sizing: border-box;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                
-                box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .666);
-            }
-
-            @media (prefers-color-scheme: light){
-                .text-section{
-                    background-color: white;
-                    color: black;
-                }
-
-                .text-section > h1, .text-section > h2{
-                    color: black;
-                }
-            }
-
-            @supports not (-webkit-touch-callout: none) {
-                .image-section{
-                    background-attachment: fixed;
-                    background-size: cover;
-                }
-            }
-        </style>
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
     
     <body style="width: 100%;">
         <span class="text-section" style="padding-bottom: 3em;">
-            <img src="logo.png" style="width: 100%; max-width: 37vh; margin: auto; display: block;">
+            <img src="images/logo.png" style="width: 100%; max-width: 37vh; margin: auto; display: block;">
             <h1 style="text-align: center;">Southwestern Ohio Animal Rights Network</h1>
         </span>
-        <span class="image-section" style="background-image: url(cube.jpg);">
+        <span class="image-section" style="background-image: url(images/cube.jpg);">
             <h2>Who we are</h2>
             <p>We are a network of animal rights activists in the Cincinnati/Dayton area that work with organizations such as Animal Activism Mentorship, Anonymous for the Voiceless, Plant Based Treaty, Project Animal Freedom, Slaughter Free Network, PETA, and more to end all forms of animal exploitation and cruelty.</p>
         </span>
         <span class="text-section">
-            <h2>What we do</h2>
+            <h2>What we do, and why</h2>
+            <p>Every day, billions of animals are abused and mistreated. Pigs are gassed, chicks are ground up alive, and animals are confined and exploited. We believe this is wrong.</p>
             <p>We push for change in all ways that we can, from petitioning for legislative changes to screaming our hearts out in the streets.</p>
+            <br/>
+            <a href="learn_more.html" class="anchor-button" style="background-color: #728ADB; color: white;">Learn more</a>
         </span>
-        <span class="image-section" style="background-image: url(horse.jpeg);">
+        <span class="image-section" style="background-image: url(images/horse.jpeg);">
             <h2>Get involved</h2>
             <p>If you are interested in advocating for the animals in an obligation-free environment, join our Discord server.</p>
             <br/>
-            <a href="https://discord.gg/FzWJC5kyUf" target="_blank" value="Join" style="background-color: #728ADB; color: white; font-size: 1.1em; padding: 0.8em 1.1em 0.8em 1.1em;">Join</a>
+            <a href="https://discord.gg/FzWJC5kyUf" class="anchor-button" target="_blank" style="background-color: white; color: black; font-size: 1.1em;">Join</a>
             <br/>
             <br/>
         </span>
