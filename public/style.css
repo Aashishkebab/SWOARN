@@ -49,6 +49,7 @@ iframe{
     display: block;
     margin: auto;
     width: 98%;
+	max-width: 53em;
     aspect-ratio: 16 / 9;
 }
 
