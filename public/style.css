@@ -114,8 +114,10 @@ img{
     font-size: 1.1em;
     padding: 0.8em 1.1em 0.8em 1.1em;
 
-    background-color: white;
-    color: black;
+    background-color: #728ADB;
+    color: white;
+
+    box-shadow: 0 8px 5px 3px black;
 }
 
 @media screen and (min-width: 777px) {
@@ -154,8 +156,7 @@ img{
     }
 
     .anchor-button{
-        background-color: black;
-        color: white;
+        background-color: #5A6896; color: white;
     }
 
     .text-section h1, .text-section h2, .text-section h3, .text-section h4{
