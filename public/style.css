@@ -49,10 +49,10 @@ body *{
     color: black;
 }
 
-.text-section:nth-of-type(odd) a{
+.text-section:nth-of-type(odd) a:not(.anchor-button){
     color: lightskyblue
 }
-.text-section:nth-of-type(odd) a:visited{
+.text-section:nth-of-type(odd) a:visited:not(.anchor-button){
     color: plum
 }
 
@@ -113,6 +113,9 @@ img{
 .anchor-button{
     font-size: 1.1em;
     padding: 0.8em 1.1em 0.8em 1.1em;
+
+    background-color: white;
+    color: black;
 }
 
 @media screen and (min-width: 777px) {
@@ -149,7 +152,12 @@ img{
         color: black;   
     }
 
-    .text-section > h1, .text-section > h2, .text-section > h3, .text-section > h4{
+    .anchor-button{
+        background-color: black;
+        color: white;
+    }
+
+    .text-section h1, .text-section h2, .text-section h3, .text-section h4{
         color: black;
     }
 }
