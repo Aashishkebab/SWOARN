@@ -1,7 +1,18 @@
+#title-span{
+    padding-bottom: 3em;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
 h1{
     color: white;
     font-size: min(7vw, 3em);
     margin: 0;
+
+    text-align: center;
+    margin-top: 1.5em;
+    margin: auto;
 }
 h2{
     color: white;
@@ -43,6 +54,16 @@ body{
     background-repeat: no-repeat;
     
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .666);
+}
+
+.logo{
+    width: 10%;
+    height: 10%;
+    min-width: 12em;
+    min-height: 12em;
+    max-width: 37vh;
+    margin: auto;
+    display: block;
 }
 
 iframe{
