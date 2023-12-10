@@ -110,7 +110,6 @@ img{
     max-width: 555px;
     display: block;
     margin: auto;
-    margin-top: 2em;
 }
 
 .anchor-button{
@@ -159,8 +158,7 @@ img{
         flex-wrap: nowrap;
     }
 
-    img{
+    .boxed-text-section img:last-child, .boxed-text-section span:last-child{
         margin-left: 2.5em;
-        margin-right: 2.5em;
     }
 }
