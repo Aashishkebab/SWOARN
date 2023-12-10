@@ -118,7 +118,7 @@ img{
 @media screen and (min-width: 777px) {
     .logo{
         text-align: left;
-        margin: 0;
+        margin-left: 0;
     }
 
     #title-span{
