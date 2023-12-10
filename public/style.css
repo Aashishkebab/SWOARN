@@ -33,16 +33,12 @@ body *{
     box-sizing: border-box;
 }
 
-
 .text-section{
     background-color: black;
     color: lightgrey;
     width: 100%;
     display: block;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em 1em 1em 1em;
 }
 .text-section:nth-of-type(even){
     background-color: lightgray;
@@ -53,13 +49,19 @@ body *{
     color: black;
 }
 
+.text-section:nth-of-type(odd) a{
+    color: lightskyblue
+}
+.text-section:nth-of-type(odd) a:visited{
+    color: plum
+}
 
 .image-section{
     background-color: black;
     color: lightgray;
     width: 100%;
-    height: 23em;
-    min-height: min-content;
+    min-height: 23em;
+    height: max-content;
     display: block;
     padding-bottom: 7em;
     padding-top: 1em;
@@ -94,6 +96,7 @@ body *{
 iframe{
     display: block;
     margin: auto;
+    margin-bottom: 1em;
     width: 98%;
 	max-width: max(53em, 103vh);
     aspect-ratio: 16 / 9;
