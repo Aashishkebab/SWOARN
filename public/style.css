@@ -1,14 +1,13 @@
 #title-span{
     padding-bottom: 3em;
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: auto;
+    display: block;
 }
 
 h1{
     color: white;
     font-size: min(7vw, 3em);
     margin: 0;
+    padding: 0;
 
     text-align: center;
     margin-top: 1.5em;
@@ -21,10 +20,14 @@ h2{
 }
 
 body{
+    width: 100%;
     margin: 0;
     padding: 0;
     font-size: 1.2em;
     font-family: sans-serif;
+}
+body *{
+    box-sizing: border-box;
 }
 
 .text-section{
@@ -36,24 +39,29 @@ body{
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    box-sizing: border-box;
 }
 .image-section{
     background-color: black;
     color: lightgray;
     width: 100%;
     height: 23em;
+    min-height: min-content;
     display: block;
     padding-bottom: 7em;
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
-    box-sizing: border-box;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .666);
+}
+
+.flexbox{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: auto;
 }
 
 .logo{
@@ -75,7 +83,20 @@ iframe{
 }
 
 .anchor-button{
-    font-size: 1.1em; padding: 0.8em 1.1em 0.8em 1.1em;
+    font-size: 1.1em;
+    padding: 0.8em 1.1em 0.8em 1.1em;
+}
+
+@media screen and (min-width: 600px) {
+    .logo{
+        text-align: left;
+        margin: 0;
+    }
+
+    #title-span{
+        display: inline-flex;
+        flex-wrap: nowrap;
+    }
 }
 
 @media (prefers-color-scheme: light){
