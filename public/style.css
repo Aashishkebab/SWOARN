@@ -128,12 +128,12 @@ img{
 }
 .footer a{
     font-size: 3em;
-    margin-right: 0.4em;
-    color: white;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
     text-decoration: none;
 }
-.footer a:visited{
-    color: white;
+.footer p{
+    font-size: smaller;
 }
 
 @media screen and (min-width: 777px) {
