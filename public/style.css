@@ -62,10 +62,9 @@ body *{
     background-color: black;
     color: lightgray;
     width: 100%;
-    min-height: 23em;
     height: max-content;
     display: block;
-    padding-bottom: 7em;
+    padding-bottom: 1em;
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
