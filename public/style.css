@@ -36,8 +36,8 @@ body *{
 }
 
 .text-section{
-    background-color: black;
-    color: lightgrey;
+    background-color: RGB(25, 25, 25);
+    color: white;
     width: 100%;
     display: block;
     padding: 1em 1em 1em 1em;
@@ -45,6 +45,10 @@ body *{
 .text-section:nth-of-type(even){
     background-color: lightgray;
     color: black;
+}
+
+#title-span{
+    background-color: black;
 }
 
 .text-section:nth-of-type(even) h2, .text-section:nth-of-type(even) h3{
@@ -125,6 +129,7 @@ img{
 
 .footer{
     text-align: center;
+    background-color: black;
 }
 .footer a{
     font-size: 3em;
