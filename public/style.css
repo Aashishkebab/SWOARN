@@ -110,7 +110,7 @@ iframe{
     aspect-ratio: 16 / 9;
 }
 
-img{
+img, .img-box{
     width: 100%;
     max-width: 777px;
     display: block;
@@ -164,7 +164,7 @@ img{
         flex-wrap: nowrap;
     }
 
-    .boxed-text-section img:last-child, .boxed-text-section span:last-child{
+    .boxed-text-section img:last-child, .boxed-text-section .img-box:last-child, .boxed-text-section span:last-child{
         margin-left: 2.5em;
     }
 }
