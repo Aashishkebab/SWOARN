@@ -16,7 +16,7 @@ function toggleNavbar(){
 		let anchors = document.getElementsByTagName('a');
 
 		for(let i = 0; i < anchors.length; i++){
-			if(anchors[i].parentElement.tagName.toLowerCase() != 'nav'){
+			if(anchors[i].parentElement.tagName.toLowerCase() != 'nav' && anchors[i].id != 'vegan-burger'){
 				anchors[i].style.pointerEvents = 'none';
 				anchors[i].style.cursor = 'default';
 			}
