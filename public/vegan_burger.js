@@ -1,7 +1,7 @@
 // Set the onclick for all body elements except the title header space to close the navbar when clicked.
 let sections = document.getElementsByTagName('span');
 for(let i = 0; i < sections.length; i++){
-	if(!(sections[i].id == 'title-span')){
+	if(sections[i].id != 'title-span'){
 		sections[i].addEventListener('click', function(){closeNavbar()});
 	}
 }
@@ -16,8 +16,10 @@ function toggleNavbar(){
 		let anchors = document.getElementsByTagName('a');
 
 		for(let i = 0; i < anchors.length; i++){
-			anchors[i].style.pointerEvents = 'none';
-			anchors[i].style.cursor = 'default';
+			if(anchors[i].parentElement.tagName.toLowerCase() != 'nav'){
+				anchors[i].style.pointerEvents = 'none';
+				anchors[i].style.cursor = 'default';
+			}
 		}
 	}
 }
