@@ -7,7 +7,7 @@ nav{
     transform-origin: top;
 
     position: absolute;
-    z-index: 99;
+    z-index: 1;
     width: 100%;
 }
 .open-nav {
@@ -37,6 +37,13 @@ nav > a{
 nav > a:hover{
     background-color: white;
     color: black;
+}
+nav > a:active{
+    transition: none;
+    box-shadow: inset 0 0 5em 0.3em black;
+
+    color: white;
+    background-color: #5A6896;
 }
 
 .open-nav ~ span{
@@ -77,10 +84,6 @@ body *{
     box-sizing: border-box;
 
     transition: 0.5s ease-in-out;
-}
-
-i{
-    display: block;
 }
 
 .text-section{
@@ -239,7 +242,7 @@ figcaption{
         flex-wrap: nowrap;
     }
 
-    .boxed-text-section img:last-child, .boxed-text-section .img-box:last-child, .boxed-text-section span:last-child{
+    .boxed-text-section figure:last-child, .boxed-text-section span:last-child{
         margin-left: 2.5em;
     }
 }
