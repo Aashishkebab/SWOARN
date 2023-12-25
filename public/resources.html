@@ -4,15 +4,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="images/favicon.svg">
         <script src="https://kit.fontawesome.com/d5b94ec159.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css?version=1.9">
+        <link rel="stylesheet" href="style.css?version=2.0">
+
+        <script type="text/javascript">
+            function navbar(){
+                document.getElementById('vegan-burger-menu').className == 'open-nav' ? document.getElementById('vegan-burger-menu').className = 'closed-nav' : document.getElementById('vegan-burger-menu').className = 'open-nav';
+
+                document.getElementsByClassName('')
+            }
+        </script>
     </head>
 
     <body>
         <span id="title-span" class="text-section">
             <a href="index.html" class="logo"><img src="images/logo.png" class="logo"></a>
             <h1>Resources</h1>
+            <a id="vegan-burger" class="fa fa-bars" href="javascript:navbar();"></a>
         </span>
-
+        <nav id="vegan-burger-menu" class="closed-nav">
+            <a href="about_activism.html">What we do</a>
+            <a href="learn_more.html">Why activism is so important</a>
+            <a href="resources.html">Resources</a>
+            <a href="about_us.html">About us</a>
+            <a href="https://discord.gg/FzWJC5kyUf" target="_blank">Join us</a>
+        </nav>
+        
         <span class="text-section">
             <h2>Vegan starter kit</h2>
             <p>Ready to go vegan? Sign up to Veganuary for resources, recipes, and coaching.</p>

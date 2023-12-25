@@ -4,14 +4,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="images/favicon.svg">
         <script src="https://kit.fontawesome.com/d5b94ec159.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css?version=1.9">
+        <link rel="stylesheet" href="style.css?version=2.0">
+
+        <script type="text/javascript">
+            function navbar(){
+                document.getElementById('vegan-burger-menu').className == 'open-nav' ? document.getElementById('vegan-burger-menu').className = 'closed-nav' : document.getElementById('vegan-burger-menu').className = 'open-nav';
+
+                document.getElementsByClassName('')
+            }
+        </script>
     </head>
 
     <body>
         <span id="title-span" class="text-section">
             <a href="index.html" class="logo"><img src="images/logo.png" class="logo"></a>
             <h1>Our Activism</h1>
+            <a id="vegan-burger" class="fa fa-bars" href="javascript:navbar();"></a>
         </span>
+        <nav id="vegan-burger-menu" class="closed-nav">
+            <a href="about_activism.html">What we do</a>
+            <a href="learn_more.html">Why activism is so important</a>
+            <a href="resources.html">Resources</a>
+            <a href="about_us.html">About us</a>
+            <a href="https://discord.gg/FzWJC5kyUf" target="_blank">Join us</a>
+        </nav>
+        
         <span class="text-section">
             <h2>Street Activism</h2>
             <p>Our most common activism involves direct interaction with people when protesting or hosting demonstrations in public spaces. Talking to people directly allows us to have productive, meaningful discussion and encourage people to think critically about their choices and their role in animal suffering. There are several effective approaches to street activism.</p>
@@ -23,16 +40,16 @@
                     <a href="https://discord.gg/3V3EjmVWHr" class="anchor-button" target="_blank">Join the fight</a>
                     <br/><br/><br/>
                 </span>
-                <span class="img-box">
-                    <img src="images/grassroots.jpg">
-                    <i>Photo: Horse carriage Lebanon protest</i>
-                </span>
+                <figure>
+                    <img src="images/grassroots.jpg" alt="11 protesters holding anti-horse carriage signs">
+                    <figcaption>Protesting the Lebanon Horse Carriage event; Lebanon, OH</figcaption>
+                </figure>
             </span>
             <span class="boxed-text-section">
-                <span class="img-box">
-                    <img src="images/anonymous.jpeg">
-                    <i>Photo: International Cube Day in Dayton</i>
-                </span>
+                <figure>
+                    <img src="images/anonymous.jpeg" alt="People standing in a cube facing outward holding TVs with Guy Fox masks">
+                    <figcaption>Cube of Truth; Dayton, OH</figcaption>
+                </figure>
                 <span>
                     <h3>Anonymous for the Voiceless</h3>
                     <p>Anonymous for the Voiceless activism is a specific demonstration-style activism involving the showcase of animal agriculture on TVs and outreachers to engage those interested in the footage. AV is unique in their approach, using anonymous face masks to ensure the focus is kept on the TVs, and a usage of black clothing to prevent distractions. These demonstrations are called Cubes of Truth, and we participate in these all over the state.</p>
@@ -56,20 +73,20 @@
                     <a href="https://animalactivismmentorship.com" class="anchor-button" target="_blank">Find a mentor</a>
                     <br/><br/><br/>
                 </span>
-                <span class="img-box">
-                    <img src="images/aam.png">
-                    <i>Photo: Animal Activism Mentorship booth</i>
-                </span>
+                <figure>
+                    <img src="images/aam.png" alt="Two people at a table/booth hosted by another">
+                    <figcaption>AAM tabling; Cleveland, OH</figcaption>
+                </figure>
             </span>
             <br/>
             <span class="boxed-text-section">
-                <span class="img-box">
-                    <img src="images/occurrence.jpg">
-                    <i>Photo: Ohio Occurrence protesters ending speciesism</i>
-                </span>
+                <figure>
+                    <img src="images/occurrence.jpg" alt="Protesters with a banner that says 'End speciesism'">
+                    <figcaption>Protesters at Ohio Occurrence; Columbus, OH</figcaption>
+                </figure>
                 <span>
                     <h3>Ohio Occurrence</h3>
-                    <p>Ohio Occurrence is a multi-day animal activism event that tours the cities of Ohio. Founded by an AAM mentor after attending an AAM live tour in GA, she wanted to bring that energy to Ohio.</p>
+                    <p>Ohio Occurrence is a multi-day animal activism event that tours the cities of Ohio founded by an AAM mentor who, after attending an AAM live tour in GA, wanted to bring that energy to Ohio.</p>
                     <p>At Ohio Occurrence, volunteers advocate for suffering animals in several different industries through outreach, demos, protests…etc. This allows the volunteers to gain different experiences and to learn from seasoned activists. They can then take what they learn and use in their communities to advocate for animals.</p>
                     <p>You can contact them via <a href="mailto:ohiooccurrence@gmail.com">email</a> or follow on <a href="https://www.facebook.com/ohiooccurrence" target="_blank">Facebook</a> and <a href="https://www.instagram.com/ohiooccurrence/" target="_blank">Instagram</a> for updates.</p>
                     <br/><br/><br/>
@@ -89,16 +106,16 @@
                     <a href="https://plantbasedtreaty.org" class="anchor-button" target="_blank">Endorse</a>
                     <br/><br/><br/>
                 </span>
-                <span class="img-box">
-                    <img src="images/pbt.jpg">
-                    <i>Photo: Plant-based treaty booth</i>
-                </span>
+                <figure>
+                    <img src="images/pbt.jpg" alt="Three people at a banner that says 'Endorse the Plant-Based Treaty'">
+                    <figcaption>Plant-based treaty table at Ohio Occurrence; Cincinnati, OH</figcaption>
+                </figure>
             </span>
             <span class="boxed-text-section">
-                <span class="img-box">
-                    <img src="images/fur.jpeg">
-                    <i>Photo: Anti-fur protest</i>
-                </span>
+                <figure>
+                    <img src="images/fur.jpeg" alt="Fur protesters with signs standing outside a fur shop">
+                    <figcaption>Fur-free Friday rally; Montgomery, OH</figcaption>
+                </figure>
                 <span>
                     <h3>Project Animal Freedom</h3>
                     <p>Project Animal Freedom strives to build a fully vegan midwest by 2056 by mobilizing activists across the Midwest, building thriving animal rights communities, and inspiring large-scale generosity to benefit more-than-human animals.</p>
@@ -115,10 +132,10 @@
                     <a href="https://slaughterfreenetwork.org" class="anchor-button" target="_blank">Join the campaign</a>
                     <br/><br/><br/>
                 </span>
-                <span class="img-box">
-                    <img src="images/slaughter_free.png">
-                    <i>Photo: Slaughter-free protest</i>
-                </span>
+                <figure>
+                    <img src="images/slaughter_free.png" alt="Two people holding signs">
+                    <figcaption>Slaughter-free protest; Somewhere, OH</figcaption>
+                </figure>
             </span>
         </span>
 

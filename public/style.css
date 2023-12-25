@@ -40,7 +40,9 @@ nav > a:hover{
 }
 
 .open-nav ~ span{
-    filter: blur(5px);
+    filter: blur(11px);
+
+    transition: 0.4s cubic-bezier(0.04, 0.73, 0.38, 1);
 }
 
 h1, h2, h3, h4{
@@ -74,7 +76,7 @@ body{
 body *{
     box-sizing: border-box;
 
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 i{
@@ -166,11 +168,14 @@ iframe{
     aspect-ratio: 16 / 9;
 }
 
-img, .img-box{
+img, figure{
     width: 100%;
     max-width: 777px;
     display: block;
     margin: auto;
+}
+figcaption{
+    font-style: italic;
 }
 
 .anchor-button{
