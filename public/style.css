@@ -77,6 +77,10 @@ body *{
     transition: 0.3s ease-in-out;
 }
 
+i{
+    display: block;
+}
+
 .text-section{
     background-color: RGB(25, 25, 25);
     color: white;
