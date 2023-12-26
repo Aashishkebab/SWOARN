@@ -3,6 +3,55 @@
     display: block;
 }
 
+nav{
+    transform-origin: top;
+
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.open-nav {
+    transform: scale(1, 1);
+    transition: 0.4s cubic-bezier(0.04, 0.73, 0.38, 1);
+
+    height: min-content;
+    /* box-shadow: 0 77em 111em 77em RGBA(0, 0, 0, 0.5); */
+}
+.closed-nav{
+    height: 0;
+    /* box-shadow: none; */
+
+    transform: scale(1, 0);
+    transition: 0.3s ease-in;
+}
+
+nav > a{
+    display: block;
+    background-color: #5A6896;
+    color: white;
+    padding: 1em 1em 1em 1em;
+    font-size: max(2vh, 0.8em);
+
+    transition: 0.2s ease-in-out;
+}
+nav > a:hover{
+    background-color: white;
+    color: black;
+}
+nav > a:active{
+    transition: none;
+    box-shadow: inset 0 0 5em 0.3em black;
+
+    color: white;
+    background-color: #5A6896;
+}
+
+.open-nav ~ span{
+    filter: blur(11px);
+
+    transition: 0.4s cubic-bezier(0.04, 0.73, 0.38, 1);
+}
+
 h1, h2, h3, h4{
     margin: 0;
     padding: 0;
@@ -33,6 +82,8 @@ body{
 }
 body *{
     box-sizing: border-box;
+
+    transition: 0.5s ease-in-out;
 }
 
 .text-section{
@@ -55,10 +106,10 @@ body *{
     color: black;
 }
 
-.text-section:nth-of-type(odd) a:not(.anchor-button){
+.text-section:nth-of-type(odd) a:not(.anchor-button, .fa-bars){
     color: lightskyblue
 }
-.text-section:nth-of-type(odd) a:visited:not(.anchor-button){
+.text-section:nth-of-type(odd) a:visited:not(.anchor-button, .fa-bars){
     color: plum
 }
 
@@ -101,6 +152,16 @@ body *{
     display: block;
 }
 
+.fa-bars{
+    position: absolute;
+    right: 0.3em;
+    top: 0.3em;
+    font-size: 11vw;
+
+    text-decoration: none;
+    color: white;
+}
+
 iframe{
     display: block;
     margin: auto;
@@ -110,11 +171,14 @@ iframe{
     aspect-ratio: 16 / 9;
 }
 
-img, .img-box{
+img, figure{
     width: 100%;
     max-width: 777px;
     display: block;
     margin: auto;
+}
+figcaption{
+    font-style: italic;
 }
 
 .anchor-button{
@@ -145,12 +209,26 @@ img, .img-box{
     .logo{
         text-align: left;
         margin: 0;
-        margin-left: 0;
+        margin-right: 0.3em;
     }
 
     #title-span{
         display: inline-flex;
         flex-wrap: nowrap;
+    }
+
+    .fa-bars{
+        display: inline;
+        margin-left: 0.3em;
+    
+        float: right;
+        position: relative;
+        top: 0;
+        right: 0;
+
+        font-size: min(7vw, 3em);
+
+        margin-top: 1.5em;
     }
 }
 
@@ -164,7 +242,7 @@ img, .img-box{
         flex-wrap: nowrap;
     }
 
-    .boxed-text-section img:last-child, .boxed-text-section .img-box:last-child, .boxed-text-section span:last-child{
+    .boxed-text-section figure:last-child, .boxed-text-section span:last-child{
         margin-left: 2.5em;
     }
 }
