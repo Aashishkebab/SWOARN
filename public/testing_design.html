@@ -18,6 +18,12 @@
         <meta property="og:image:width" content="8332"/>
         <meta property="og:image:height" content="4374"/>
         <meta property="og:site_name" content="Southwestern Ohio Animal Rights Network"/>
+
+        <script type="text/javascript">
+            import { getDatabase } from "firebase/database";
+
+            const database = getDatabase();
+        </script>
     </head>
 
     <style>
@@ -30,7 +36,17 @@
         <span id="title-span" class="text-section">
             <a href="index.html" class="logo"><img src="images/logo.png" class="logo"></a>
             <h1>Southwestern Ohio Animal Rights Network</h1>
+            <a id="vegan-burger" class="fa fa-bars" href="javascript:toggleNavbar();"></a>
         </span>
+        <nav id="vegan-burger-menu" class="closed-nav">
+            <a href="index.html">Home</a>
+            <a href="about_activism.html">What we do</a>
+            <a href="learn_more.html">Why activism is so important</a>
+            <a href="resources.html">Resources</a>
+            <a href="about_us.html">About us</a>
+            <a href="https://discord.gg/FzWJC5kyUf" target="_blank">Join us</a>
+        </nav>
+
         <span class="text-section">
             <h2>What we do</h2>
             <p>We are a network of animal rights activists in the Cincinnati, Dayton, and surrounding areas that work with organizations such as Animal Activism Mentorship, Anonymous for the Voiceless, Plant Based Treaty, Project Animal Freedom, Slaughter Free Network, and more to end all forms of animal exploitation and cruelty.</p>
@@ -75,4 +91,6 @@
             <p>© 2024 Southwestern Ohio Animal Rights Network</p>
         </span>
     </body>
+
+    <script src="vegan_burger.js?version=1.3" type="text/javascript"></script>
 </html>
