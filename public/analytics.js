@@ -25,4 +25,5 @@ if(pageName == ""){
 }
 
 alert(`${pageName}_visited`);
+console.log(`${pageName}_visited`);
 logEvent(analytics, `${pageName}_visited`);
