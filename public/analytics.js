@@ -24,6 +24,5 @@ if(pageName == ""){
     pageName = "index";
 }
 
-alert(`${pageName}_visited`);
 console.log(`${pageName}_visited`);
 logEvent(analytics, `${pageName}_visited`);
