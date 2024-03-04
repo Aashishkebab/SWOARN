@@ -20,5 +20,9 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 var pageName = window.location.pathname.split("/").pop();
+if(pageName == ""){
+    pageName = "index";
+}
 
+alert(`${pageName}_visited`);
 logEvent(analytics, `${pageName}_visited`);
