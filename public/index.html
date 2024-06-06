@@ -93,7 +93,7 @@
         let userAgent = window.navigator.userAgent.toLowerCase();
         if(userAgent.includes('windows')){
             document.getElementById('discord-link').href = 'https://apps.microsoft.com/store/detail/XPDC2RH70K22MN?ocid=pdpshare';
-        }else if(userAgent.includes('ios')){
+        }else if(userAgent.includes('ios') || userAgent.includes('iphone') || userAgent.includes('ipod') || userAgent.includes('ipad')){
             document.getElementById('discord-link').href = 'https://apps.apple.com/us/app/discord-talk-play-hang-out/id985746746';
         }else if(userAgent.includes('android')){
             document.getElementById('discord-link').href = 'https://play.google.com/store/apps/details?id=com.discord&hl=en_US&pli=1';
