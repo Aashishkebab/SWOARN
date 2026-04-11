@@ -170,7 +170,7 @@ iframe{
 img, figure{
     width: 100%;
     max-width: 777px;
-    display: none;
+    display: block;
     margin: auto;
 }
 figcaption{
