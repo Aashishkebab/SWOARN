@@ -1,39 +1,62 @@
-// Set the onclick for all body elements except the title header space to close the navbar when clicked.
-let sections = document.getElementsByTagName('span');
-for(let i = 0; i < sections.length; i++){
-	if(sections[i].id != 'title-span'){
-		sections[i].addEventListener('click', closeNavbar);
-	}
-}
+closeNavWhenClickingOutside(); // Add the listeners
 
 /**
- * Toggles the state of the navigation menu and disables all anchors if it was just opened.
+ * Listener to close nav by clicking outside it when it is open.
  */
-function toggleNavbar(){
-	document.getElementById('vegan-burger-menu').className == 'open-nav' ? closeNavbar() : document.getElementById('vegan-burger-menu').className = 'open-nav';
-
-	if(document.getElementById('vegan-burger-menu').className == 'open-nav'){
-		let anchors = document.getElementsByTagName('a');
-
-		for(let i = 0; i < anchors.length; i++){
-			if(anchors[i].parentElement.tagName.toLowerCase() != 'nav' && anchors[i].id != 'vegan-burger'){
-				anchors[i].style.pointerEvents = 'none';
-				anchors[i].style.cursor = 'default';
+function closeNavWhenClickingOutside(){
+        document.addEventListener('click', function(event) {
+			if (event.target.closest('nav') || event.target.closest('.vegan-burger')) {
+				return;
 			}
-		}
-	}
+
+            if (!document.body.classList.contains('nav-open')) {
+                return;
+            }
+            if (event.target.closest('nav')) {
+                return;
+            }
+
+            closeBurger();
+        });
 }
 
 /**
- * Closes the navigation menu and re-enables anchors.
+ * Opens the vegan burger menu.
  */
-function closeNavbar(){
-	document.getElementById('vegan-burger-menu').className = 'closed-nav';
+function openBurger(){
+    // We need to set the animation here because if set in the CSS it triggers when shrinking the page, causing a visual anomaly. I do not know why.
+    document.getElementById('vegan-burger-menu').style.transition = 'transform 0.4s cubic-bezier(0.04, 0.73, 0.38, 1)';
 
-	let anchors = document.getElementsByTagName('a');
+    document.getElementById('vegan-burger-menu').classList.add('nav-open');
+	document.getElementById('vegan-burger-menu').classList.remove('closed-nav');
+    document.body.classList.add('nav-open');
+    // document.querySelectorAll('.hero a, main a, footer a').forEach(link => {
+    //     link.style.pointerEvents = 'none';
+    // });
+}
 
-	for(let i = 0; i < anchors.length; i++){
-		anchors[i].style.pointerEvents = 'auto';
-		anchors[i].style.cursor = 'pointer';
-	}
+/**
+ * Closes the vegan burger menu.
+ */
+function closeBurger(){
+    document.getElementById('vegan-burger-menu').style.transition = 'transform 0.4s ease-in';
+
+    document.getElementById('vegan-burger-menu').classList.remove('nav-open');
+    document.body.classList.remove('nav-open');
+	document.getElementById('vegan-burger-menu').classList.add('closed-nav');
+
+    document.querySelectorAll('.hero a, main a, footer a').forEach(link => {
+        link.style.pointerEvents = '';
+    });
+}
+
+/**
+ * Toggles the state of the vegan burger menu.
+ */
+function toggleBurger(){
+    if (document.body.classList.contains('nav-open')) {
+        closeBurger();
+    } else {
+        openBurger();
+    }
 }

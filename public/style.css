@@ -4,25 +4,21 @@
 }
 
 nav{
+    
     transform-origin: top;
 
     position: absolute;
     z-index: 1;
     width: 100%;
 }
-.open-nav {
+.nav-open {
     transform: scale(1, 1);
-    transition: 0.4s cubic-bezier(0.04, 0.73, 0.38, 1);
-
-    height: min-content;
-    /* box-shadow: 0 77em 111em 77em RGBA(0, 0, 0, 0.5); */
+    transition: transform 0.4s cubic-bezier(0.04, 0.73, 0.38, 1);
 }
 .closed-nav{
-    height: 0;
-    /* box-shadow: none; */
-
     transform: scale(1, 0);
-    transition: 0.3s ease-in;
+    pointer-events: none;
+    transition: none;
 }
 
 nav > a{
@@ -46,7 +42,7 @@ nav > a:active{
     background-color: #5A6896;
 }
 
-.open-nav ~ span{
+.nav-open ~ span{
     filter: blur(11px);
 
     transition: 0.4s cubic-bezier(0.04, 0.73, 0.38, 1);
@@ -174,7 +170,7 @@ iframe{
 img, figure{
     width: 100%;
     max-width: 777px;
-    display: block;
+    display: none;
     margin: auto;
 }
 figcaption{
@@ -203,6 +199,66 @@ figcaption{
 }
 .footer p{
     font-size: smaller;
+}
+
+.vegan-burger {
+    position: absolute;
+    right: 0.3em;
+    top: 0.3em;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    width: 50px;
+    height: 73px;
+
+    margin-right: 13px;
+    margin-top: -3px;
+}
+
+.vegan-burger-line {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 6px;
+    left: 0;
+
+    border-radius: 33px;
+
+    background-color: antiquewhite;
+
+    transition: ease-in 0.4s;
+}
+.nav-open .vegan-burger-line{
+    transition: transform 0.4s cubic-bezier(0.04, 0.73, 0.38, 1);
+}
+
+.vegan-burger-line:nth-child(1) {
+    top: 25%;
+}
+.nav-open .vegan-burger-line:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.vegan-burger-line:nth-child(2) {
+    top: 50%;
+
+    transition: ease-in 0.4s;
+}
+.nav-open .vegan-burger-line:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.04, 0.73, 0.38, 1);
+}
+
+.vegan-burger-line:nth-child(3) {
+    top: 75%;
+}
+.nav-open .vegan-burger-line:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 777px) {
