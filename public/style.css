@@ -104,15 +104,11 @@ body *{
     color: black;
 }
 
-.text-section:nth-of-type(odd) a:not(.anchor-button, .fa-bars){
+.text-section:nth-of-type(odd) a:not(.anchor-button, .fa-bars), .image-section a:not(.anchor-button){
     color: lightskyblue
 }
-.text-section:nth-of-type(odd) a:visited:not(.anchor-button, .fa-bars){
+.text-section:nth-of-type(odd) a:visited:not(.anchor-button, .fa-bars), .image-section a:visited:not(.anchor-button){
     color: plum
-}
-
-a{
-    color: #5A6896;
 }
 
 .image-section{
