@@ -6,6 +6,10 @@
 
     position: relative;
     z-index: 7;
+
+    min-height: 66px;
+    height: 7vh;
+    padding: 1vh;
 }
 
 nav{
@@ -14,6 +18,8 @@ nav{
     position: absolute;
     z-index: 1;
     width: 100%;
+
+    padding: 0;
 }
 .nav-open {
     transform: scale(1, 1);
@@ -141,11 +147,8 @@ body *{
 }
 
 .logo, .logo-small{
-    height: 7vh;
-    max-height: 7vh;
+    height: 100%;
     aspect-ratio: 1/1;
-
-    min-height: 66px;
 }
 .logo{
     display: none;
@@ -226,8 +229,8 @@ figcaption{
     border: none;
     cursor: pointer;
 
-    width: 50px;
-    height: 66px;
+    width: 33pt;
+    height: 100%;
 
     margin-right: 13px;
     margin-left: auto;
@@ -293,9 +296,6 @@ a.fa-brands:active, a.fa:active{
         text-align: left;
         margin: 0;
         margin-right: 0.3em;
-
-        height: 13vh;
-        max-height: 13vh;
 
         display: inline-block;
     }
