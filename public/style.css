@@ -168,6 +168,7 @@ iframe{
     width: 98%;
 	max-width: max(53em, 103vh);
     aspect-ratio: 16 / 9;
+    max-height: 43vh;
 }
 
 img, figure{
