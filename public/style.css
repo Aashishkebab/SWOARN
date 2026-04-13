@@ -293,10 +293,6 @@ a.fa-brands:active, a.fa:active{
 
 @media screen and (min-width: 777px) {
     .logo{
-        text-align: left;
-        margin: 0;
-        margin-right: 0.3em;
-
         display: inline-block;
     }
     .logo-small{
@@ -306,6 +302,9 @@ a.fa-brands:active, a.fa:active{
     #title-span{
         display: inline-flex;
         flex-wrap: nowrap;
+
+        height: 15vh;
+        max-height: 333px;
     }
 
     .fa-bars{
