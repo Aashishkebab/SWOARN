@@ -144,11 +144,19 @@ a{
     flex-wrap: wrap-reverse;
 }
 
-.logo{
+.logo, .logo-small{
     height: 77px;
     width: 77px;
     max-width: 37vh;
+}
+.logo{
+    display: none;
+}
+.logo-small{
     display: inline-block;
+    text-align: left;
+    margin: 0;
+    margin-right: 0.3em;
 }
 
 .fa-bars{
@@ -232,7 +240,7 @@ figcaption{
 
     border-radius: 33px;
 
-    background-color: white;
+    background-color: #5A6896;
 
     transition: ease-in 0.4s;
 }
@@ -271,6 +279,11 @@ figcaption{
         text-align: left;
         margin: 0;
         margin-right: 0.3em;
+
+        display: inline-block;
+    }
+    .logo-small{
+        display: none;
     }
 
     #title-span{
