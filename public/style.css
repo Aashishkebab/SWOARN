@@ -111,6 +111,10 @@ body *{
     color: plum
 }
 
+a{
+    color: #5A6896;
+}
+
 .image-section{
     background-color: black;
     color: RGB(222, 222, 222);
