@@ -230,11 +230,11 @@ figcaption{
     cursor: pointer;
 
     width: 33pt;
-    height: 100%;
+    height: 66px;
 
     margin-right: 13px;
     margin-left: auto;
-    margin-top: -6px;
+    margin-top: -3px;
     margin-bottom: 6px;
 
     padding: 0;
