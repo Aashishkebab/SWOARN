@@ -227,11 +227,13 @@ figcaption{
     cursor: pointer;
 
     width: 50px;
-    min-height: 66px;
+    height: 66px;
 
     margin-right: 13px;
     margin-left: auto;
-    /* margin-top: -6px; */
+    margin-top: -6px;
+    margin-bottom: 6px;
+
     padding: 0;
 }
 
