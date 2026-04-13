@@ -39,7 +39,7 @@ nav > a:hover{
     color: black;
 }
 nav > a:active{
-    transition: none;
+    transition: 0.07s ease-out;
     box-shadow: inset 0 0 5em 0.3em black;
 
     color: white;
@@ -83,7 +83,7 @@ body{
 body *{
     box-sizing: border-box;
 
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .text-section{
@@ -194,6 +194,12 @@ figcaption{
 
     border-radius: 0.2em;
 }
+.anchor-button:hover{
+    background-color: #40538a;
+}
+.anchor-button:active{
+    background-color: #001554;
+}
 
 .footer{
     text-align: center;
@@ -268,6 +274,15 @@ figcaption{
 .nav-open .vegan-burger-line:nth-child(3) {
     top: 50%;
     transform: rotate(-45deg);
+}
+
+a.fa-brands:hover, a.fa:hover{
+    transform: scale(1.3);
+    transition: ease-out 0.1s;
+}
+a.fa-brands:active, a.fa:active{
+    transform: scale(0.7);
+    transition: ease-out 0.1s;
 }
 
 @media screen and (min-width: 777px) {
